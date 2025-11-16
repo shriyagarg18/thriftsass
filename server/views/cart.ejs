@@ -1,0 +1,11 @@
+<%- include('partials/header', { pageTitle: 'Cart', active: 'cart', pageStyles: ['/css/style-cart.css'] }) %>
+
+<main class="cart-main">
+  <h1>Your Shopping Cart</h1>
+
+  <div id="cart-container"></div>
+  <h3 id="total-price">Total: ₹0</h3>
+  <button id="clear-cart" type="button" class="clear-cart-btn">Clear Cart</button>
+</main>
+
+<%- include('partials/footer', { pageScripts: ['/scripts/cart-manager.js', '/scripts/cart.js'] }) %>
